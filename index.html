@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Login-Signup</title>
+        <link href="./index.css" rel="stylesheet" />
+    </head>
+    <body>
+        <nav class="navigation">
+        <p>Login-Signin Page</p>
+    </nav>
+        <div class="card">
+            <div class="card-header">
+                <center><h3>Login-Signup Form</h3></center>
+            </div>
+            <form onsubmit="login()" id="loginForm">
+                <center><small><span id="error" style="color: red"></span></small></center>
+                <br><center>
+                <label class="field1">
+                    <span class="placeholder">Email Id</span><br><br>
+                    <input id="email" type="text" class="input" required />
+                    
+                </label><br/><br>
+                <label class="field2">
+                    <span class="placeholder">Password</span><br><br>
+                    <input id="password" type="password" class="input" required />
+                    
+                </label><br /><br/></center>
+                <center><button type="submit" class="login-btn">Login</button>
+                <button onclick="signUp()" class="signup-btn">Sign Up</button>
+                </center>
+            </form>
+        </div>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-analytics.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/8.6.7/firebase-auth.js"></script>
+        <script src="firebase.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
